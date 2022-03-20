@@ -1,8 +1,38 @@
+$background_url : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/PSM_V03_D427_Hughes_printing_telegraph.jpg/1024px-PSM_V03_D427_Hughes_printing_telegraph.jpg";
+
 * {
     padding: 0px;
     margin: 0px;
 }
 
-h1 {
-    background-color: #ff3333;
+header {
+    width: 99.99vw;
+    height: 80vh;
+    //background: url($background_url);
+    //background-size: cover;
+    background: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    * {
+        font-family: "sans-serif";
+        color: black;
+        font-size: 2em;
+    }
+}
+
+.content {
+    text-align: center;
+    background: grey;
+    width: 90vw;
+    margin: auto;
+}
+
+.sender {
+    margin-top: 30vh;
+}
+main {
+    margin-top: 30vh;
 }
