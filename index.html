@@ -4,83 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegraph 2</title>
-
-    <link rel="stylesheet" href="./diststyles/index.css">
-    <script defer src="./src/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js" integrity="sha512-4P0ZJ49OMXe3jXT+EsEaq82eNwFeyYL81LeHGzGcEhowFbTqeQ80q+NEkgsE8tHPs6aCqvi7U+XWliAjDmT5Lg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.js" integrity="sha512-U2sgwrFhl+Tgx9iGH9h5Ba2WyIjyCes+D0prtIFw3a0V+/fkaeL5Cd/VjyPHno9kUPE1rnNhBGTyvtZsfJp0xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>
+        Telegraph Version 2.0.0
+    </title>
+    <link rel="stylesheet" href="./style/index.less">
 </head>
 <body>
-    <header>
-        <h1>Hello</h1>
-        <p>Welcome to the telegraph, a way to communicate using sound</p>
-    </header>
-    <div class="content">
-        <div class="about">
-            <h2>About</h2>
-            <p>
-                This is the telegraph. The telegraph is a way for devices
-                to communicate using ultrasonic frequencies of the sound
-                domain(20154 Hz) to transmit data.
-                <br>
-                <br>
-                Currently, the telegraph can transmit binary data, so 
-                just a blink on other devices, but in the future the 
-                capabilities of the telegraph will expand.
-                <br>
-                <br>
-                I plan to add in the ability for the telegraph to transmit
-                text data, encrypted text data, and also HTTP requests.
-                <br>
-                <br>
-                However this is the current working version of the telegraph
-                so enjoy!
-                <br>
-                <br>
-            </p>
-            <h3>Also</h3>
-            <p>
-               Frankly, the telegraph looks pretty bad right now, so
-               please note that this site is in a very early stage of
-               developement and will not look like this later on.        
-            </p>
-        </div>
-        <main>
-            <h3>Transmission Log</h3>
-            <p>
-                This is the live transmission log of the telegraph. The 
-                box below will be red by defualt, but it will blink 
-                green when a binary 1 is sent over the wire.
-                <br>
-                <br>
-                Also, please note the input box. This box will have the
-                number 200 in it by default, but this can be changed.
-                The number controls what threshold determins if a signal
-                is a one or if it is a zero. So if you want to bias the
-                input data, a higher value will favor a zero and a lower
-                value will favor a one. This number should be mapped between
-                0 and 255.
-            </p>
-            <input type="text" id="over" value="200">
-        </main>
-        <div class="sender">
-            <h3>Send A Signal</h3>
-            <p>
-                Press the button below to send a binary one over the wire.
-                You should notice that the surrounding devices running
-                telegraph software should blink green in their 
-                transmission logs.
-            </p>
-            <button id="sendSignal">Send<button>
-        </div>
-    </div>
-    <footer> 
-        Yellow
-    </footer>
+    <div id="root"></div>
+    <script type="module" src="./src/index.tsx"></script>
 </body>
 </html>
-
-
-
-
