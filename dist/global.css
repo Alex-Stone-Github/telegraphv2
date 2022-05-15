@@ -1,0 +1,61 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+:root {
+    ---blue: blue;
+}
+
+header {
+    background-image: url("./res/ex.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header > * {
+    color: gray;
+}
+nav {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0px;
+}
+nav > * {
+    background-color: inherit;
+    border: 1px solid black;
+    border-radius: 1px;
+    text-align: center;
+    min-width: 120px;
+    margin: 10px;
+    padding: 10px;
+    transition: .3s;
+}
+nav > *:hover {
+    background-color: grey;
+}
+main {
+    background-color: wheat;
+    height: 100vh;
+}
+main > section {
+    height: 10vh;
+    background-color: inherit;
+    border-bottom: 1px solid black;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+footer {
+    background-color: black;
+    color: white;
+    height: 20vh;
+}
